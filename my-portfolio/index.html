@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<!--<link href="tailwind.css" rel="stylesheet"/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato&display=swap" rel="stylesheet">		<style>
+			body { margin: 0; }
+			.font-exo {
+				font-family: 'Exo 2', sans-serif;
+			}
+			.font-lato {
+				font-family: 'Lato', sans-serif;
+			}
+		</style>
+	</head>
+    <body>
+		<div class="flex h-screen bg-black">
+			<div class="w-1/2 flex flex-col justify-center px-8">
+				<div style="max-width: 500px;" class="max-auto">
+				<h1 class="text-white text-4xl mb-8 font-exo leading-none">CHALLENGING THE STANDARD OF SPACE EXPLORATION</h1>
+				<p class="text-white mb-8 font-lato">
+					Millions of developers and companies build, ship and maintain their software on Github-the largest and most advanced development platform in the world.
+				</p>
+				<div>
+					<a 
+						href=""
+						class="text-white bg-green-600 inline-block px-8 py-4 rounded-full font-lato">
+						Learn More
+					</a>
+				</div>
+				</div>
+			</div>
+			<div class="w-1/2" id="canvasContainer">
+				<canvas></canvas>
+			</div>
+		</div>
+		<script type="module" src="./main.js">  
+		</script>
+	</body>
+</html>
